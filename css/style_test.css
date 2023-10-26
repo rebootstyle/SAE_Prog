@@ -1,0 +1,164 @@
+html {
+ 
+  height: 100%;
+  width: 100%;
+  background-color: rgb(196, 196, 187);
+  
+
+}
+
+#map { 
+  height: 500px; 
+}
+@font-face{
+  font-family: "Dapifer_Stencil_Blackbe677b9701_Regular";
+  src: url("https://db.onlinewebfonts.com/t/a2d0496797fe97e7e6c9016d8de356de.eot");
+  src: url("https://db.onlinewebfonts.com/t/a2d0496797fe97e7e6c9016d8de356de.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/a2d0496797fe97e7e6c9016d8de356de.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/a2d0496797fe97e7e6c9016d8de356de.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/a2d0496797fe97e7e6c9016d8de356de.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/a2d0496797fe97e7e6c9016d8de356de.svg#Dapifer_Stencil_Blackbe677b9701_Regular")format("svg");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
+}
+body {
+  
+  font-size: 175%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  font-family: "Dapifer_Stencil_Blackbe677b9701_Regular";
+}
+header{
+  position: fixed;
+  content: center;
+  background-color: rgb(196, 196, 187);
+}
+  img {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  height: 75px;
+  margin-left: 300%;
+    margin-top:25%
+
+}
+.entete {
+ 
+  position: fixed;
+  grid-column: 1 / 2;
+  grid-row: 1;
+
+  margin-top: 400px;
+  margin-left: 400px;
+  margin-right: auto;
+}
+
+.graphiques {
+  grid-column: 2 / 2;
+  grid-row: 1;
+  margin-top: 250px;
+  margin-left: 25%;
+  margin-right: 100px
+}
+
+
+canvas{
+  height: 200px;
+  width: 84px;
+}
+footer {
+
+  grid-column: 1 / 2;
+  grid-row: 2;
+ 
+  background-color: rgb(196, 196, 187);
+  font-size: 75%;
+}
+
+.intitule {
+   z-index: 2;
+
+  padding-top: 100px;
+  padding-left: 26%;
+  white-space: nowrap;
+
+}
+
+.noms {
+  grid-column: 2 / 2;
+  grid-row: 2;
+  width: 150px;
+  margin-top: -50px;
+  padding-left: 166%;
+  padding-right: -15px;
+  white-space: nowrap;
+
+
+}
+
+button {
+  
+  background-color: rgb(37, 53, 81);
+  color: white;
+  height: 80px;
+  width: 200px;
+  border-radius: 30px;
+}
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Dapifer, Dapifer, Dapifer;
+}
+details, summary {
+    max-width: 500px;
+}
+details {
+    background: rgb(196, 196, 187);
+    cursor: pointer;
+    border-radius: 0px;
+    margin: 30px auto 0;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.3);
+}
+summary {
+    user-select: none;
+    padding: 25px;
+    font-size: 22px;
+    border-top: 1px solid black;
+   padding-top: 20px;
+}
+details p {
+    line-height: 1.5;
+    padding: 0px 25px 25px;
+    cursor: auto;
+    text-align: justify;
+}
+p.description{
+  font-size: 20px;
+}
+
+/* Animer et styliser le twist */
+
+summary {list-style: none} 
+
+details summary::before { 
+  content:"+"; 
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.4s ease-out;
+}
+
+details[open] summary::before {
+    content:"-";
+    transform: rotate(360deg);
+}
+
+
+
